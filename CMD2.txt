@@ -1,0 +1,41 @@
+SELECT * FROM PRODUTOS
+    -> WHERE VALOR  BETWEEN 1 AND 10;
++----+----------+-------+------+
+| id | nome     | valor | qtde |
++----+----------+-------+------+
+|  1 | Lápis    |  1.00 |   10 |
+|  2 | Borracha |  3.00 |   10 |
++----+----------+-------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [exemplo]>  SELECT * FROM PRODUTOS
+    -> WHERE VALOR BETWEEN 1 AND 10;
++----+----------+-------+------+
+| id | nome     | valor | qtde |
++----+----------+-------+------+
+|  1 | Lápis    |  1.00 |   10 |
+|  2 | Borracha |  3.00 |   10 |
++----+----------+-------+------+
+2 rows in set (0.001 sec)
+
+MariaDB [exemplo]> SELECT * FROM PRODUTOS;
++----+----------+-------+------+
+| id | nome     | valor | qtde |
++----+----------+-------+------+
+|  1 | Lápis    |  1.00 |   10 |
+|  2 | Borracha |  3.00 |   10 |
+|  3 | Caderno  | 15.00 |   10 |
++----+----------+-------+------+
+3 rows in set (0.001 sec)
+
+MariaDB [exemplo]>  SELECT * FROM PRODUTOS
+    -> WHERE VALOR IN(3,15);
++----+----------+-------+------+
+| id | nome     | valor | qtde |
++----+----------+-------+------+
+|  2 | Borracha |  3.00 |   10 |
+|  3 | Caderno  | 15.00 |   10 |
++----+----------+-------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [exemplo]>
